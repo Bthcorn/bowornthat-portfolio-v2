@@ -14,7 +14,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       }
 
       // Check if the signing in user matches the allowed username (case-insensitive)
-      return profile?.email?.toLowerCase() === "john.doe@example.com";
+      return profile?.email?.toLowerCase() === allowedEmail.toLowerCase();
     },
   },
   pages: {
