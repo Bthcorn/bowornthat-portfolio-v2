@@ -5,16 +5,17 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [GitHub],
   callbacks: {
     async signIn({ profile }) {
-      // Restrict access to a specific GitHub username
-      const allowedEmail = process.env.ADMIN_GITHUB_EMAIL;
+      // Restrict access to a specific GitHub User ID
+      const allowedId = process.env.ADMIN_GITHUB_ID;
       
-      if (!allowedEmail) {
-        console.warn("ADMIN_GITHUB_EMAIL not set in environment variables.");
-        return false; // Create security by default, don't allow if not set
+      if (!allowedId) {
+        console.warn("ADMIN_GITHUB_ID not set in environment variables.");
+        return false;
       }
 
-      // Check if the signing in user matches the allowed username (case-insensitive)
-      return profile?.email?.toLowerCase() === allowedEmail.toLowerCase();
+      // Check if the signing in user matches the allowed ID
+      // profile.id from GitHub is a number, env var is a string
+      return String(profile?.id) === allowedId;
     },
   },
   pages: {
