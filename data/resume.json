@@ -1,0 +1,188 @@
+{
+  "personalInfo": {
+    "name": "Bowornthat Chiangthong",
+    "title": "3rd Year Software Engineering Student",
+    "summary": "I enjoy learning new technologies and am eager to gain real-world development experience to strengthen my problem-solving skills and grow as a software developer.",
+    "location": "Bangkok, Thailand",
+    "email": "bowornthat.chth@gmail.com",
+    "phone": "-",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/139036880?v=4",
+    "initials": "JD",
+    "resumeUrl": "https://drive.google.com/file/d/12d6t7Ne029MSeTB_IjvCAXPiOxNEK1D3/view",
+    "socials": [
+      {
+        "name": "Github",
+        "icon": "Github",
+        "url": "https://github.com/Bthcorn"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "Linkedin",
+        "url": "https://www.linkedin.com/in/bowornthat-chiangthong/"
+      },
+      {
+        "name": "Portfolio",
+        "icon": "Globe",
+        "url": "#"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Web Developer Internship",
+      "company": "Merkle (part of dentsu Thailand)",
+      "period": "April 2025 – June 2025",
+      "location": "Bangkok, Thailand",
+      "achievements": [
+        "Contributed to the development and maintenance of a Content Management System (CMS) to support dynamic marketing campaigns.",
+        "Developed mobile-friendly microsites and web applications for voucher campaigns by collaborating with UX/UI designers",
+        "Participated in the full development lifecycle, from feature implementation to manual testing and verification with QA engineers and testers"
+      ]
+    },
+    {
+      "role": "Web Programming TA",
+      "company": "SE KMITL",
+      "period": "July 2025 – October 2025",
+      "location": "Bangkok, Thailand",
+      "achievements": [
+        "Facilitated lab sessions and evaluated lab completion for second-year students."
+      ]
+    },
+    {
+      "role": "Calculus TA",
+      "company": "SE KMITL",
+      "period": "July 2024 – October 2024",
+      "location": "Bangkok, Thailand",
+      "achievements": [
+        "Led tutorial sessions and provided Q&A support to first-year students for exam preparation."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "EduSaig",
+      "tech": [
+        "React",
+        "Next.js",
+        "Tailwind CSS"
+      ],
+      "desc": "Developed an AI-powered learning platform that recommends personalized courses based on users’ interests and AI-generated pre-tests.",
+      "stars": ""
+    },
+    {
+      "name": "StudySync",
+      "tech": [
+        "FastAPI",
+        "Alembic",
+        "SQL Model",
+        "SQL Alchemy",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "desc": "Developed RESTful APIs for a Notion-like exam prep app with features like notes, flashcards, and quizzes. Adopted the Repository Pattern to separate database logic and improve code maintainability. And used Docker to streamline backend setup.",
+      "stars": ""
+    },
+    {
+      "name": "NextGen AI Camp",
+      "tech": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "React Query",
+        "Zustand"
+      ],
+      "desc": "Contributed to the development of a web application designed for high school students interested in AI and coding. Implemented responsive pages and components based on Figma designs, collaborating closely with UX/UI teams.",
+      "stars": ""
+    },
+    {
+      "name": "Find My Fluffy Web",
+      "tech": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "React Query",
+        "shadcn/ui"
+      ],
+      "desc": "Developed comprehensive pet-finding platform that aims to reunite lost pets with their families and integrated with APIs. The application provides tools for reporting missing pets, browsing found animals, and facilitating community-driven pet recovery efforts.",
+      "stars": ""
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "Rust",
+        "Go",
+        "C++",
+        "PHP",
+        "SQL"
+      ]
+    },
+    {
+      "category": "Frontend Development",
+      "skills": [
+        "React",
+        "Next.js",
+        "React Query",
+        "Zustand",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Laravel"
+      ]
+    },
+    {
+      "category": "Backend Development",
+      "skills": [
+        "Express.js",
+        "NestJS",
+        "Fast API",
+        "Axios",
+        "Node.js",
+        "Prisma ORM",
+        "Fiber (Go)",
+        "GORM",
+        "Laravel"
+      ]
+    },
+    {
+      "category": "Database Management System",
+      "skills": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "category": "Tools",
+      "skills": [
+        "Postman",
+        "Fork",
+        "Docker",
+        "Git"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BE Software Engineering",
+      "institution": "King Mongkut's Institute of Technology Ladkrabang (KMITL)",
+      "period": "2023 - Present",
+      "extra": ""
+    }
+  ],
+  "languages": [
+    {
+      "lang": "English",
+      "level": "Professional",
+      "percentage": 70
+    },
+    {
+      "lang": "Thai",
+      "level": "Native",
+      "percentage": 100
+    }
+  ]
+}
