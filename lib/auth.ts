@@ -1,10 +1,13 @@
+import NextAuth from "next-auth"
 import GitHub from "next-auth/providers/github"
 import { createHash } from "crypto"
-import { NextAuthConfig } from "next-auth";
- 
-export const authConfig: NextAuthConfig = {
+import { authConfig } from "./auth.config"
+
+export const { auth, handlers, signIn, signOut } = NextAuth({
+  ...authConfig,
   providers: [GitHub],
   callbacks: {
+    ...authConfig.callbacks,
     async signIn({ profile }) {
       // Restrict access to a specific GitHub User ID via Salted Hash
       const allowedHash = process.env.ADMIN_GITHUB_ID_HASH;
@@ -23,7 +26,4 @@ export const authConfig: NextAuthConfig = {
       return userHash === allowedHash;
     },
   },
-  pages: {
-    signIn: "/login",
-  },
-}
+})
