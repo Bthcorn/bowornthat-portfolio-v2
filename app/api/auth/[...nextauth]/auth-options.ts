@@ -1,8 +1,8 @@
-import NextAuth from "next-auth"
 import GitHub from "next-auth/providers/github"
 import { createHash } from "crypto"
+import { NextAuthConfig } from "next-auth";
  
-export const { handlers, auth, signIn, signOut } = NextAuth({
+export const authConfig: NextAuthConfig = {
   providers: [GitHub],
   callbacks: {
     async signIn({ profile }) {
@@ -26,4 +26,4 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   pages: {
     signIn: "/login",
   },
-})
+}
